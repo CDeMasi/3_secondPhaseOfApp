@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">3_secondPhaseOfApp</string>
+    <string name="button_weather">Weather</string>
+    <string name="button_portfolio">Portfolio</string>
+    <string name="button_resume">Resume</string>
+
+</resources>
