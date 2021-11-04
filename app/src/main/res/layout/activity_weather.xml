@@ -110,8 +110,7 @@ android:background="@drawable/gradient_bg">
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/sunrise"
-                        android:tint="#FFFFFF" />
+                        android:src="@drawable/sunrise" />
 
                     <Space
                         android:layout_width="wrap_content"
@@ -147,8 +146,7 @@ android:background="@drawable/gradient_bg">
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/sunset"
-                        android:tint="#FFFFFF" />
+                        android:src="@drawable/sunset" />
 
                     <Space
                         android:layout_width="wrap_content"
@@ -184,8 +182,7 @@ android:background="@drawable/gradient_bg">
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/wind"
-                        android:tint="#FFFFFF" />
+                        android:src="@drawable/wind" />
 
                     <Space
                         android:layout_width="wrap_content"
@@ -228,8 +225,7 @@ android:background="@drawable/gradient_bg">
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/pressure"
-                        android:tint="#FFFFFF" />
+                        android:src="@drawable/pressure" />
 
                     <Space
                         android:layout_width="wrap_content"
@@ -265,8 +261,7 @@ android:background="@drawable/gradient_bg">
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/humidity"
-                        android:tint="#FFFFFF" />
+                        android:src="@drawable/humidity" />
 
                     <Space
                         android:layout_width="wrap_content"
@@ -302,8 +297,7 @@ android:background="@drawable/gradient_bg">
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/info"
-                        android:tint="#FFFFFF" />
+                        android:src="@drawable/info" />
 
                     <Space
                         android:layout_width="wrap_content"
