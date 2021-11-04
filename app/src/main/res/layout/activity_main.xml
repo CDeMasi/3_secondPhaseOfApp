@@ -1,128 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/facts_about"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
-        android:text="Facts About Me"
-        app:layout_constraintBottom_toTopOf="@+id/birthplace"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/birthplace"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="31dp"
-        android:layout_marginBottom="12dp"
-        android:text="Place of Birth: Winchester, MA"
-        app:layout_constraintBottom_toTopOf="@+id/where_i_live_now"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/where_i_live_now"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="31dp"
-        android:layout_marginBottom="12dp"
-        android:text="Where I Live Now: Wakefield, MA"
-        app:layout_constraintBottom_toTopOf="@+id/where_i_want_to_live"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/where_i_want_to_live"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="31dp"
-        android:layout_marginBottom="12dp"
-        android:text="Where I'd Like To Live: Lowell, MA"
-        app:layout_constraintBottom_toTopOf="@+id/sig_other"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/sig_other"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="31dp"
-        android:layout_marginBottom="305dp"
-        android:text="Where My Significant Other Grew Up: Groton, MA"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:gravity="center">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="143dp"
-        android:layout_height="164dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="1dp"
-        android:src="@drawable/selfie"
-        app:layout_constraintBottom_toTopOf="@+id/my_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="165dp"
+        android:src="@drawable/selfie" />
 
     <TextView
         android:id="@+id/my_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Caroline DeMasi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        android:text="@string/my_name" />
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/facts_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/facts_about" />
+
+    <TextView
+        android:id="@+id/birthplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/birthplace" />
+
+    <TextView
+        android:id="@+id/where_i_live_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/where_i_live_now" />
+
+    <TextView
+        android:id="@+id/where_i_want_to_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/where_i_want_to_live" />
+
+    <TextView
+        android:id="@+id/sig_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sig_other" />
+
+    <TextView
+        android:id="@+id/birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/birthday" />
 
     <Button
         android:id="@+id/weather"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="116dp"
         android:onClick="goToWeather"
-        android:text="@string/button_weather"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="@string/button_weather" />
 
     <Button
         android:id="@+id/portfolio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="116dp"
         android:onClick="goToPortfolio"
-        android:text="@string/button_portfolio"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="@string/button_portfolio" />
 
     <Button
         android:id="@+id/resume"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="116dp"
         android:onClick="goToResume"
-        android:text="@string/button_resume"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="@string/button_resume" />
+</LinearLayout>
+
